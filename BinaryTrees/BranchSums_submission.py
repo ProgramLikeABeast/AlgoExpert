@@ -18,3 +18,14 @@ def calculateSum(node, sumArray, tempSum):
         calculateSum(node.left, sumArray, tempSum + node.value)
     if node.right:
         calculateSum(node.right, sumArray, tempSum + node.value)
+
+
+root = BinaryTree(1)
+
+
+def main():
+    BranchSums(root)
+
+
+if __name__=="__main__":
+    main()
